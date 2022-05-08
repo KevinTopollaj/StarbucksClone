@@ -17,7 +17,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.makeKeyAndVisible()
     window?.backgroundColor = .systemBackground
-    window?.rootViewController = ViewController()
+    
+    let tabBarController = UITabBarController()
+    tabBarController.viewControllers = [ViewController()]
+    
+    let appearance = UITabBarAppearance()
+    appearance.configureWithOpaqueBackground()
+    appearance.backgroundColor = .quaternarySystemFill
+    tabBarController.tabBar.standardAppearance = appearance
+    tabBarController.tabBar.scrollEdgeAppearance = tabBarController.tabBar.standardAppearance
+    
+    
+    window?.rootViewController = tabBarController
     
     return true
     
