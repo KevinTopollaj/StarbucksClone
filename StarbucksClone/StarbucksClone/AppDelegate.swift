@@ -18,12 +18,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window?.makeKeyAndVisible()
     window?.backgroundColor = .systemBackground
     
+    let homeVC = HomeViewController()
+    let scanVC = ScanViewController()
+    let orderVC = OrderViewController()
+    let giftVC = GiftViewController()
+    let storeVC = StoreViewController()
+    
     let tabBarController = UITabBarController()
-    tabBarController.viewControllers = [ViewController()]
+    tabBarController.viewControllers = [homeVC, scanVC, orderVC, giftVC, storeVC]
     
     let appearance = UITabBarAppearance()
     appearance.configureWithOpaqueBackground()
-    appearance.backgroundColor = .quaternarySystemFill
+    appearance.backgroundColor = .systemBackground
     tabBarController.tabBar.standardAppearance = appearance
     tabBarController.tabBar.scrollEdgeAppearance = tabBarController.tabBar.standardAppearance
     
