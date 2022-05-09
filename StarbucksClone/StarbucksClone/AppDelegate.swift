@@ -24,7 +24,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let giftVC = GiftViewController()
     let storeVC = StoreViewController()
     
-    let homeNC = makeNavigationController(rootViewController: homeVC, withLargeTitle: true)
+    let homeNC = makeNavigationController(rootViewController: homeVC)
     let scanNC = makeNavController(root: scanVC)
     let orderNC = makeNavController(root: orderVC)
     let giftNC = makeNavController(root: giftVC)
@@ -46,11 +46,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
   }
   
-  func makeNavigationController(rootViewController: UIViewController, withLargeTitle: Bool = false) -> UINavigationController {
+  func makeNavigationController(rootViewController: UIViewController) -> UINavigationController {
     let navigationController = UINavigationController(rootViewController: rootViewController)
-    navigationController.navigationBar.prefersLargeTitles = withLargeTitle
-    
-
+    navigationController.navigationBar.prefersLargeTitles = true
     
     let attributes = [
       NSAttributedString.Key.foregroundColor: UIColor.label,
