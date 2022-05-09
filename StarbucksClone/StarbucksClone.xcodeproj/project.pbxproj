@@ -16,6 +16,7 @@
 		1F3786EB28285700006EB419 /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786EA28285700006EB419 /* OrderViewController.swift */; };
 		1F3786ED2828579B006EB419 /* GiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786EC2828579B006EB419 /* GiftViewController.swift */; };
 		1F3786EF28285823006EB419 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786EE28285823006EB419 /* StoreViewController.swift */; };
+		1F3786F128296B46006EB419 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786F028296B46006EB419 /* Factories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1F3786EA28285700006EB419 /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		1F3786EC2828579B006EB419 /* GiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftViewController.swift; sourceTree = "<group>"; };
 		1F3786EE28285823006EB419 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
+		1F3786F028296B46006EB419 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				1F3786EA28285700006EB419 /* OrderViewController.swift */,
 				1F3786EC2828579B006EB419 /* GiftViewController.swift */,
 				1F3786EE28285823006EB419 /* StoreViewController.swift */,
+				1F3786F028296B46006EB419 /* Factories.swift */,
 			);
 			path = StarbucksClone;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				1F3786D62828477C006EB419 /* HomeViewController.swift in Sources */,
 				1F3786EB28285700006EB419 /* OrderViewController.swift in Sources */,
+				1F3786F128296B46006EB419 /* Factories.swift in Sources */,
 				1F3786D22828477C006EB419 /* AppDelegate.swift in Sources */,
 				1F3786E7282854B6006EB419 /* StarBucksViewController.swift in Sources */,
 				1F3786ED2828579B006EB419 /* GiftViewController.swift in Sources */,

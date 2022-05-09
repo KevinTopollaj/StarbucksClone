@@ -24,8 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let giftVC = GiftViewController()
     let storeVC = StoreViewController()
     
+    let homeNC = makeNavigationController(rootViewController: homeVC, withLargeTitle: true)
+    let scanNC = makeNavigationController(rootViewController: scanVC)
+    let orderNC = makeNavigationController(rootViewController: orderVC)
+    let giftNC = makeNavigationController(rootViewController: giftVC)
+    let storeNC = makeNavigationController(rootViewController: storeVC)
+    
     let tabBarController = UITabBarController()
-    tabBarController.viewControllers = [homeVC, scanVC, orderVC, giftVC, storeVC]
+    tabBarController.viewControllers = [homeNC, scanNC, orderNC, giftNC, storeNC]
     
     let appearance = UITabBarAppearance()
     appearance.configureWithOpaqueBackground()
@@ -38,6 +44,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     return true
     
+  }
+  
+  func makeNavigationController(rootViewController: UIViewController, withLargeTitle: Bool = false) -> UINavigationController {
+    let navigationController = UINavigationController(rootViewController: rootViewController)
+    navigationController.navigationBar.prefersLargeTitles = withLargeTitle
+    
+//    let navAppearance = UINavigationBarAppearance()
+//    navAppearance.configureWithOpaqueBackground()
+//    navAppearance.backgroundColor = .systemBackground
+//    
+//    navigationController.navigationBar.standardAppearance = navAppearance
+//    navigationController.navigationBar.scrollEdgeAppearance = navigationController.navigationBar.standardAppearance
+    
+    let attributes = [
+      NSAttributedString.Key.foregroundColor: UIColor.label,
+      NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title1).bold()
+    ]
+    
+    navigationController.navigationBar.largeTitleTextAttributes = attributes
+    
+    return navigationController
   }
 
 }
