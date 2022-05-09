@@ -25,10 +25,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let storeVC = StoreViewController()
     
     let homeNC = makeNavigationController(rootViewController: homeVC, withLargeTitle: true)
-    let scanNC = makeNavigationController(rootViewController: scanVC)
-    let orderNC = makeNavigationController(rootViewController: orderVC)
-    let giftNC = makeNavigationController(rootViewController: giftVC)
-    let storeNC = makeNavigationController(rootViewController: storeVC)
+    let scanNC = makeNavController(root: scanVC)
+    let orderNC = makeNavController(root: orderVC)
+    let giftNC = makeNavController(root: giftVC)
+    let storeNC = makeNavController(root: storeVC)
     
     let tabBarController = UITabBarController()
     tabBarController.viewControllers = [homeNC, scanNC, orderNC, giftNC, storeNC]
@@ -50,12 +50,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let navigationController = UINavigationController(rootViewController: rootViewController)
     navigationController.navigationBar.prefersLargeTitles = withLargeTitle
     
-//    let navAppearance = UINavigationBarAppearance()
-//    navAppearance.configureWithOpaqueBackground()
-//    navAppearance.backgroundColor = .systemBackground
-//    
-//    navigationController.navigationBar.standardAppearance = navAppearance
-//    navigationController.navigationBar.scrollEdgeAppearance = navigationController.navigationBar.standardAppearance
+
     
     let attributes = [
       NSAttributedString.Key.foregroundColor: UIColor.label,
@@ -65,6 +60,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     navigationController.navigationBar.largeTitleTextAttributes = attributes
     
     return navigationController
+  }
+  
+  func makeNavController(root: UIViewController) -> UINavigationController {
+    let navController = UINavigationController(rootViewController: root)
+    
+    let navAppearance = UINavigationBarAppearance()
+    navAppearance.configureWithOpaqueBackground()
+    navAppearance.backgroundColor = .systemBackground
+    
+    navController.navigationBar.standardAppearance = navAppearance
+    navController.navigationBar.scrollEdgeAppearance = navController.navigationBar.standardAppearance
+    
+    return navController
   }
 
 }
