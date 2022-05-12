@@ -10,6 +10,8 @@ import UIKit
 class HomeViewController: StarBucksViewController {
   
   let homeHeaderView = HomeHeaderView()
+  var headerViewTopConstraint: NSLayoutConstraint?
+  
   var tableView = UITableView()
   
   let cellId = "cellId"
@@ -47,8 +49,10 @@ extension HomeViewController {
     view.addSubview(homeHeaderView)
     view.addSubview(tableView)
     
+    headerViewTopConstraint = homeHeaderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor)
+    
     NSLayoutConstraint.activate([
-      homeHeaderView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
+      headerViewTopConstraint!,
       homeHeaderView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
       homeHeaderView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
       
@@ -91,6 +95,24 @@ extension HomeViewController: UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return 300
+  }
+  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    let y = scrollView.contentOffset.y
+    
+    let swipingDown = y <= 0
+    let shouldSnap = y > 30
+    let labelHeight = homeHeaderView.greetingLabel.frame.height + 16
+    
+    UIView.animate(withDuration: 0.3) {
+      self.homeHeaderView.greetingLabel.alpha = swipingDown ? 1.0 : 0.0
+    }
+    
+    UIViewPropertyAnimator.runningPropertyAnimator(withDuration: 0.3, delay: 0, options: []) {
+      self.headerViewTopConstraint?.constant = shouldSnap ? -labelHeight : 0
+      self.view.layoutIfNeeded()
+    }
+
   }
   
 }
