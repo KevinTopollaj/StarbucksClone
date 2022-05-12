@@ -24,14 +24,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let giftVC = GiftViewController()
     let storeVC = StoreViewController()
     
-    let homeNC = makeNavigationController(rootViewController: homeVC)
+//    let homeNC = UINavigationController(rootViewController: homeVC)
     let scanNC = makeNavController(root: scanVC)
     let orderNC = makeNavController(root: orderVC)
     let giftNC = makeNavController(root: giftVC)
     let storeNC = makeNavController(root: storeVC)
     
     let tabBarController = UITabBarController()
-    tabBarController.viewControllers = [homeNC, scanNC, orderNC, giftNC, storeNC]
+    tabBarController.viewControllers = [homeVC, scanNC, orderNC, giftNC, storeNC]
     
     let appearance = UITabBarAppearance()
     appearance.configureWithOpaqueBackground()
@@ -46,19 +46,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
   }
   
-  func makeNavigationController(rootViewController: UIViewController) -> UINavigationController {
-    let navigationController = UINavigationController(rootViewController: rootViewController)
-    navigationController.navigationBar.prefersLargeTitles = true
-    
-    let attributes = [
-      NSAttributedString.Key.foregroundColor: UIColor.label,
-      NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title1).bold()
-    ]
-    
-    navigationController.navigationBar.largeTitleTextAttributes = attributes
-    
-    return navigationController
-  }
+//  func makeNavigationController(rootViewController: UIViewController) -> UINavigationController {
+//    let navigationController = UINavigationController(rootViewController: rootViewController)
+//    navigationController.navigationBar.prefersLargeTitles = true
+//
+//    let attributes = [
+//      NSAttributedString.Key.foregroundColor: UIColor.label,
+//      NSAttributedString.Key.font: UIFont.preferredFont(forTextStyle: .title1).bold()
+//    ]
+//
+//    navigationController.navigationBar.largeTitleTextAttributes = attributes
+//
+//    return navigationController
+//  }
   
   func makeNavController(root: UIViewController) -> UINavigationController {
     let navController = UINavigationController(rootViewController: root)
