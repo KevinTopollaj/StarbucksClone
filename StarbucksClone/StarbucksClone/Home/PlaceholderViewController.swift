@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TileViewController: UIViewController {
+class PlaceholderViewController: UIViewController {
  
   // MARK: - UI -
 

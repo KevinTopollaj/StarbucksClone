@@ -18,7 +18,7 @@
 		1F3786EF28285823006EB419 /* StoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786EE28285823006EB419 /* StoreViewController.swift */; };
 		1F3786F128296B46006EB419 /* Factories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786F028296B46006EB419 /* Factories.swift */; };
 		1F3786F5282D2DDB006EB419 /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786F4282D2DDB006EB419 /* HomeHeaderView.swift */; };
-		1F3786F7282EC4BA006EB419 /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786F6282EC4BA006EB419 /* TileViewController.swift */; };
+		1F3786F7282EC4BA006EB419 /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786F6282EC4BA006EB419 /* PlaceholderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +35,7 @@
 		1F3786EE28285823006EB419 /* StoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewController.swift; sourceTree = "<group>"; };
 		1F3786F028296B46006EB419 /* Factories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factories.swift; sourceTree = "<group>"; };
 		1F3786F4282D2DDB006EB419 /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
-		1F3786F6282EC4BA006EB419 /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
+		1F3786F6282EC4BA006EB419 /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 			children = (
 				1F3786F4282D2DDB006EB419 /* HomeHeaderView.swift */,
 				1F3786D52828477C006EB419 /* HomeViewController.swift */,
-				1F3786F6282EC4BA006EB419 /* TileViewController.swift */,
+				1F3786F6282EC4BA006EB419 /* PlaceholderViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -187,7 +187,7 @@
 				1F3786E7282854B6006EB419 /* StarBucksViewController.swift in Sources */,
 				1F3786ED2828579B006EB419 /* GiftViewController.swift in Sources */,
 				1F3786E92828562B006EB419 /* ScanViewController.swift in Sources */,
-				1F3786F7282EC4BA006EB419 /* TileViewController.swift in Sources */,
+				1F3786F7282EC4BA006EB419 /* PlaceholderViewController.swift in Sources */,
 				1F3786EF28285823006EB419 /* StoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
