@@ -9,11 +9,13 @@ import UIKit
 
 class TileView: UIView {
   
+  // MARK: - UI -
   let imageView = UIImageView()
   let titleLabel = UILabel()
   let subtitleLabel = UILabel()
   let ctaButton = makeGreenButton(withText: "Order")
   
+  // MARK: - Initializer -
   override init(frame: CGRect) {
     super.init(frame: .zero)
     style()
@@ -24,8 +26,35 @@ class TileView: UIView {
     fatalError("init(coder:) has not been implemented")
   }
   
+  // MARK: - Shadow -
+  private var shadowLayer: CAShapeLayer!
+  private var cornerRadius: CGFloat = 6
+  private var fillColor: UIColor = .white
+  
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    addShadow()
+  }
+  
+  func addShadow() {
+    shadowLayer = CAShapeLayer()
+    
+    shadowLayer.path = UIBezierPath(roundedRect: bounds, cornerRadius: cornerRadius).cgPath
+    shadowLayer.fillColor = fillColor.cgColor
+    
+    shadowLayer.shadowColor = UIColor.black.cgColor
+    shadowLayer.shadowPath = shadowLayer.path
+    shadowLayer.shadowOffset = CGSize(width: 0.0, height: 1.0)
+    shadowLayer.shadowOpacity = 0.2
+    shadowLayer.shadowRadius = 1
+    
+    layer.insertSublayer(shadowLayer, at: 0)
+    
+  }
+  
 }
 
+// MARK: - Style and Layout -
 extension TileView {
   
   func style() {
