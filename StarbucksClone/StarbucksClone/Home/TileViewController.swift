@@ -42,7 +42,7 @@ class TileViewController: UIViewController {
     NSLayoutConstraint.activate([
       label.centerXAnchor.constraint(equalTo: view.centerXAnchor),
       label.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-      label.heightAnchor.constraint(equalToConstant: 300)
+      view.heightAnchor.constraint(equalToConstant: 300)
     ])
   }
   
