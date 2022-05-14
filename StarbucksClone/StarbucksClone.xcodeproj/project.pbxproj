@@ -21,6 +21,8 @@
 		1F3786F7282EC4BA006EB419 /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786F6282EC4BA006EB419 /* PlaceholderViewController.swift */; };
 		1F3786F9282ED5AB006EB419 /* TileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786F8282ED5AB006EB419 /* TileViewController.swift */; };
 		1F3786FB282ED5D3006EB419 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786FA282ED5D3006EB419 /* TileView.swift */; };
+		1F3786FE282FBF55006EB419 /* RewardTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786FD282FBF55006EB419 /* RewardTileViewController.swift */; };
+		1F378700282FBF77006EB419 /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786FF282FBF77006EB419 /* RewardTileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		1F3786F6282EC4BA006EB419 /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
 		1F3786F8282ED5AB006EB419 /* TileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileViewController.swift; sourceTree = "<group>"; };
 		1F3786FA282ED5D3006EB419 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		1F3786FD282FBF55006EB419 /* RewardTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileViewController.swift; sourceTree = "<group>"; };
+		1F3786FF282FBF77006EB419 /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 		1F3786F2282D2CAD006EB419 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1F3786FC282FBEB8006EB419 /* Rewards */,
 				1F3786F4282D2DDB006EB419 /* HomeHeaderView.swift */,
 				1F3786D52828477C006EB419 /* HomeViewController.swift */,
 				1F3786F6282EC4BA006EB419 /* PlaceholderViewController.swift */,
@@ -113,6 +118,15 @@
 				1F3786EE28285823006EB419 /* StoreViewController.swift */,
 			);
 			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1F3786FC282FBEB8006EB419 /* Rewards */ = {
+			isa = PBXGroup;
+			children = (
+				1F3786FD282FBF55006EB419 /* RewardTileViewController.swift */,
+				1F3786FF282FBF77006EB419 /* RewardTileView.swift */,
+			);
+			path = Rewards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,12 +203,14 @@
 				1F3786F9282ED5AB006EB419 /* TileViewController.swift in Sources */,
 				1F3786EB28285700006EB419 /* OrderViewController.swift in Sources */,
 				1F3786F128296B46006EB419 /* Factories.swift in Sources */,
+				1F3786FE282FBF55006EB419 /* RewardTileViewController.swift in Sources */,
 				1F3786F5282D2DDB006EB419 /* HomeHeaderView.swift in Sources */,
 				1F3786D22828477C006EB419 /* AppDelegate.swift in Sources */,
 				1F3786E7282854B6006EB419 /* StarBucksViewController.swift in Sources */,
 				1F3786ED2828579B006EB419 /* GiftViewController.swift in Sources */,
 				1F3786E92828562B006EB419 /* ScanViewController.swift in Sources */,
 				1F3786F7282EC4BA006EB419 /* PlaceholderViewController.swift in Sources */,
+				1F378700282FBF77006EB419 /* RewardTileView.swift in Sources */,
 				1F3786FB282ED5D3006EB419 /* TileView.swift in Sources */,
 				1F3786EF28285823006EB419 /* StoreViewController.swift in Sources */,
 			);
