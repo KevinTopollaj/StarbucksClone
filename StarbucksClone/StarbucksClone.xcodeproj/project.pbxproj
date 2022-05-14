@@ -23,6 +23,7 @@
 		1F3786FB282ED5D3006EB419 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786FA282ED5D3006EB419 /* TileView.swift */; };
 		1F3786FE282FBF55006EB419 /* RewardTileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786FD282FBF55006EB419 /* RewardTileViewController.swift */; };
 		1F378700282FBF77006EB419 /* RewardTileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3786FF282FBF77006EB419 /* RewardTileView.swift */; };
+		1F378702282FC1F0006EB419 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F378701282FC1F0006EB419 /* BalanceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		1F3786FA282ED5D3006EB419 /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		1F3786FD282FBF55006EB419 /* RewardTileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileViewController.swift; sourceTree = "<group>"; };
 		1F3786FF282FBF77006EB419 /* RewardTileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardTileView.swift; sourceTree = "<group>"; };
+		1F378701282FC1F0006EB419 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 			children = (
 				1F3786FD282FBF55006EB419 /* RewardTileViewController.swift */,
 				1F3786FF282FBF77006EB419 /* RewardTileView.swift */,
+				1F378701282FC1F0006EB419 /* BalanceView.swift */,
 			);
 			path = Rewards;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				1F3786F128296B46006EB419 /* Factories.swift in Sources */,
 				1F3786FE282FBF55006EB419 /* RewardTileViewController.swift in Sources */,
 				1F3786F5282D2DDB006EB419 /* HomeHeaderView.swift in Sources */,
+				1F378702282FC1F0006EB419 /* BalanceView.swift in Sources */,
 				1F3786D22828477C006EB419 /* AppDelegate.swift in Sources */,
 				1F3786E7282854B6006EB419 /* StarBucksViewController.swift in Sources */,
 				1F3786ED2828579B006EB419 /* GiftViewController.swift in Sources */,

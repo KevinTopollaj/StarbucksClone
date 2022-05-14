@@ -36,3 +36,10 @@ func makeGreenButton(withText text: String) -> UIButton {
   button.backgroundColor = .darkGreen
   return button
 }
+
+func makeSymbolImageView(systemName: String, scale: UIImage.SymbolScale = .large) -> UIImageView {
+  let configuration = UIImage.SymbolConfiguration(scale: scale)
+  let image = UIImage(systemName: systemName, withConfiguration: configuration)
+  
+  return UIImageView(image: image)
+}
